@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #fed65e;
-  border-top-color: #d2a349;
+  border-top-color:#d2a349;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -414,9 +414,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(238, 235, 235, 0.5), rgba(238, 235, 235, 0.5)),url("../img/portfolio/lifestyle/Photo\ May\ 17\,\ 7\ 51\ 18\ PM.webp")center center;
+  background: linear-gradient(rgba(92, 91, 91, 0.5), rgba(238, 235, 235, 0.5)),url('../img/bg-small.webp') center;
   background-size: cover;
 }
+
 
 #hero .container {
   padding-top: 70px;
@@ -464,6 +465,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   #hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(238, 235, 235, 0.5), rgba(238, 235, 235, 0.5)),url('../img/bg-lg.webp');
+    background-size: cover;
     background-attachment: fixed;
   }
 
@@ -480,7 +485,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(rgba(238, 235, 235, 0.5), rgba(238, 235, 235, 0.5)),url("../img/portfolio/lifestyle/Photo\ May\ 17\,\ 7\ 51\ 18\ PM.webp")left left;
+    background: linear-gradient(rgba(238, 235, 235, 0.5), rgba(238, 235, 235, 0.5)),url("../img/bg-small.webp")left left;
   }
   #hero h1 {
     font-size: 28px;
@@ -940,6 +945,10 @@ section {
   margin-bottom: 30px;
 }
 
+.portfolio .portfolio-item iframe {
+  min-height: 300px;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1053,6 +1062,11 @@ section {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+}
+
+.port-vid {
+  display: inline-flex !important;
+  align-items: flex-end;
 }
 
 /*--------------------------------------------------------------
@@ -1192,7 +1206,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #d2a349;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1212,7 +1226,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #d2a349;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1266,3 +1280,115 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  background: #f8f8f8;
+}
+
+.pricing h4 {
+  font-size: 36px;
+  color: #fed65e;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+}
+
+.pricing ul i {
+  color: #d2a349;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background: #d2a349;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 50px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: #d2a349;
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background: #d2a349;
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #fed65e;
+  color: #fff;
+}
+
